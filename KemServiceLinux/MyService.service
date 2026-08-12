@@ -1,0 +1,13 @@
+﻿[Unit]
+Description=KService Windows
+
+[Service]
+Type=notify
+ExecStart=/path/to/your/published/app/MyLinuxService
+WorkingDirectory=/path/to/your/published/app/
+Restart=always
+# Optional: user to run the service
+User=dotnetuser 
+
+[Install]
+WantedBy=multi-user.target

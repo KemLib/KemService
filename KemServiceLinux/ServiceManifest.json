@@ -1,0 +1,16 @@
+{
+  "Apps": [
+    {
+      "StartupPath": "../../../../TestKAppNetEngine/bin/Debug/net10.0",
+      "LibraryPart": "TestKAppNetEngine.dll",
+      "ClassName": "TestKAppNetEngine.AppServer",
+      "Debug": {
+        "SaveNumber": 10000,
+        "SaveTime": 43200,
+        "SaveFolder": "Logs",
+        "SaveName": "AppServer"
+      },
+      "CustomSetting": "ServerManifest.json"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿Reload systemd: sudo systemctl daemon-reload
+Start the service: sudo systemctl start MyService.service
+Enable on boot: sudo systemctl enable MyService.service
+Check status: sudo systemctl status MyService.service
