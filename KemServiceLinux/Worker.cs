@@ -1,5 +1,5 @@
-using KemServiceApp;
 using KemLibCore.DebugLog;
+using KemServiceApp;
 
 namespace KemServiceLinux
 {
@@ -26,13 +26,16 @@ namespace KemServiceLinux
             switch (log.Type)
             {
                 case LogType.Message:
-                    _logger.LogInformation("{message}", log.Title);
+                    if (_logger.IsEnabled(LogLevel.Information))
+                        _logger.LogInformation("{message}", log.Title);
                     break;
                 case LogType.Warning:
-                    _logger.LogWarning("{message}", log.Title);
+                    if (_logger.IsEnabled(LogLevel.Warning))
+                        _logger.LogWarning("{message}", log.Title);
                     break;
                 case LogType.Error:
-                    _logger.LogError("{message}", log.Title);
+                    if (_logger.IsEnabled(LogLevel.Error))
+                        _logger.LogError("{message}", log.Title);
                     break;
             }
         }

@@ -10,7 +10,7 @@ namespace KemServiceApp.Utilities
             ERROR_TYPE_CREATE_CONSTRUCTOR_EXCEPTION = "Type {0} created constructor exception \"{1}\"",
             ERROR_CONSTRUCTOR_INFO_CAN_NOT_NULL = "ConstructorInfo can't null",
             ERROR_CONSTRUCTOR_INFO_CREATE_INSTANCE_FAIL = "ConstructorInfo {0} create instance fail",
-            ERROR_CONSTRUCTOR_INFO_CREATE_INSTANCE_EXCEPTION = "ConstructorInfo {0} create instance exception \"{0}\"";
+            ERROR_CONSTRUCTOR_INFO_CREATE_INSTANCE_EXCEPTION = "ConstructorInfo {0} create instance exception \"{1}\"";
 
         private readonly ConstructorInfo? constructorInfo;
         private readonly object[]? parameters;
