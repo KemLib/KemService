@@ -12,7 +12,7 @@ namespace TestAppNone
             LOG_EXECUTABLE_PATH = "ExecutablePath",
             LOG_STARTUP_PATH = "StartupPath",
             LOG_LIBRARY_PART = "LibraryPart",
-            LOG_CUSTOM_SETTING = "Setting";
+            LOG_CUSTOM_SETTING = "CustomSetting";
         #endregion
 
         #region Construction
@@ -22,15 +22,8 @@ namespace TestAppNone
         }
         #endregion
 
-        #region Dispose
-        protected override void OnDispose(bool disposing)
-        {
-
-        }
-        #endregion
-
         #region Methods
-        protected override async Task<Result> OnInit(CancellationToken cancellationToken = default)
+        protected override async Task<Result> OnInit(ILogHander? logHander = null, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -42,7 +35,18 @@ namespace TestAppNone
                 return Result.Fail(ex.Message);
             }
         }
-
+        protected override async Task<Result> OnStop(ILogHander? logHander = null, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                await Task.Delay(100, cancellationToken);
+                return Result.Success();
+            }
+            catch (Exception ex)
+            {
+                return Result.Fail(ex.Message);
+            }
+        }
         protected override async Task<Result> OnRun(ILogHander? logHander = null, CancellationToken cancellationToken = default)
         {
             logHander?.LogMessage(LOG_SOURCE, LOG_EXECUTABLE_PATH, AppSetting.ExecutablePath);

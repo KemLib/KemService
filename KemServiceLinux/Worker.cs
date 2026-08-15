@@ -23,17 +23,16 @@ namespace KemServiceLinux
         #region Method
         private void OnLog(LogData log)
         {
-            string messsage = log.ToString();
             switch (log.Type)
             {
                 case LogType.Message:
-                    _logger.LogInformation("{message}", messsage);
+                    _logger.LogInformation("{message}", log.Title);
                     break;
                 case LogType.Warning:
-                    _logger.LogWarning("{message}", messsage);
+                    _logger.LogWarning("{message}", log.Title);
                     break;
                 case LogType.Error:
-                    _logger.LogError("{message}", messsage);
+                    _logger.LogError("{message}", log.Title);
                     break;
             }
         }

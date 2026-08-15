@@ -9,7 +9,7 @@ namespace KemServiceApp
         #region Properties
         private const string PATH_SETTING_SERVICE = "ServiceManifest.json";
 
-        public AppManifest[]? Apps
+        public AppManifest[] Apps
         {
             get;
             init;
@@ -19,7 +19,7 @@ namespace KemServiceApp
         #region Construction
         public ServiceManifest()
         {
-
+            Apps = [];
         }
         #endregion
 

@@ -17,12 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="ServiceManifest.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="service_config.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

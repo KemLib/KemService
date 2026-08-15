@@ -21,6 +21,11 @@ namespace KemServiceApp
             get;
             init;
         }
+        public int ResetTime
+        {
+            get;
+            init;
+        }
         public DebugSetting? Debug
         {
             get;
@@ -39,6 +44,7 @@ namespace KemServiceApp
             LibraryPart = string.Empty;
             ClassName = string.Empty;
             StartupPath = string.Empty;
+            ResetTime = -1;
             Debug = null;
             CustomSetting = string.Empty;
         }

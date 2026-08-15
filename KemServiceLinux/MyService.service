@@ -1,5 +1,5 @@
 ﻿[Unit]
-Description=KService Windows
+Description=KemService Windows
 
 [Service]
 Type=notify
