@@ -53,7 +53,7 @@ namespace KemServiceApp
                 //
                 Result result = await OnInit(logHander, cancellationToken);
                 //
-                if(result.IsSuccess) 
+                if (result.IsSuccess)
                     interState.Exchange(STATE_INIT);
                 return result;
             }
