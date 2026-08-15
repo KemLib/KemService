@@ -1,0 +1,17 @@
+{
+  "Apps": [
+    {
+      "StartupPath": "../../../../TestAppNone/bin/Debug/net10.0",
+      "LibraryPart": "TestAppNone.dll",
+      "ClassName": "TestAppNone.AppNone",
+      "ResetTime": -1,
+      "Debug": {
+        "SaveNumber": 10000,
+        "SaveTime": 43200,
+        "SaveFolder": "Logs",
+        "SaveName": "AppServer"
+      },
+      "CustomSetting": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KemServiceApp/KemServiceApp.csproj" Id="eeacb8d8-8bf5-4b4a-8d30-2515d4da645b" />
+  <Project Path="KemServiceLinux/KemServiceLinux.csproj" Id="5c39f172-d4d2-4042-a0de-9a3404c47433" />
+  <Project Path="KemServiceWindows/KemServiceWindows.csproj" />
+  <Project Path="TestAppNone/TestAppNone.csproj" Id="c2283ebf-80a2-4133-965f-5745e6d97218" />
+</Solution>
