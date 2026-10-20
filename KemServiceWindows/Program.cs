@@ -3,7 +3,7 @@ using KemServiceWindows;
 IHost host = Host.CreateDefaultBuilder(args)
     .UseWindowsService(options =>
     {
-        options.ServiceName = "KServiceWindows";
+        options.ServiceName = "KemService Windows";
     })
     .ConfigureServices(services =>
     {
